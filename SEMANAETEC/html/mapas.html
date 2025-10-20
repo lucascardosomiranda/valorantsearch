@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mapas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/mapas.css" />
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Toda a parte de cima do código (header) -->
+    <header>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <!-- Lista lateral -->
+      <aside class="sidebar">
+        <nav>
+          <hr />
+          <a href="../html/index.html">Sobre</a>
+          <a href="#" onclick="toggleSubmenu('mmenu1')">Modos de jogo</a>
+          <ul class="submenu" id="mmenu1">
+            <li><a href="../html/competitivo.html">Competitivo</a></li>
+            <li><a href="../html/semclass.html">Sem classificação</a></li>
+            <li><a href="../html/frenético.html">Frenético</a></li>
+            <li><a href="../html/mata.html">Mata-mata</a></li>
+          </ul>
+          <a href="../html/arma.html">Armas</a>
+          <a href="#" onclick="toggleSubmenu('mmenu2')">Funções</a>
+          <ul class="submenu" id="mmenu2">
+            <li><a href="../html/duelistas.html">Duelista</a></li>
+            <li><a href="../html/iniciadores.html">Iniciador</a></li>
+            <li><a href="../html/controladores.html">Controlador</a></li>
+            <li><a href="../html/sentinelas.html">Sentinela</a></li>
+          </ul>
+          <a href="../html/composicao.html">Composição</a>
+          <a href="../html/mapas.html">Mapas</a>
+          <a href="../html/creditos.html">Créditos</a>
+
+          <hr />
+        </nav>
+      </aside>
+      <div class="overlay"></div>
+    </header>
+    <main>
+      <div class="hdvalo">
+        <h1>MAPAS</h1>
+      </div>
+
+      <h2 id="nomeMapa"></h2>
+
+      <section id="carrosel">
+        <div class="relative w-full mapas" data-carousel="slide">
+          <!-- Carousel wrapper -->
+          <div class="relative w-full overflow-hidden rounded-lg aspect-[16/9]">
+            <!-- Inicio -->
+            <div
+              class="active duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                src="../imgs/mapas/lotus.avif"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt=""
+              />
+              <div
+                class="absolute bottom-10 left-1/2 -translate-x-1/2 bg-black/60 text-white px-6 py-3 rounded-xl text-center"
+              >
+                <h5 class="text-lg font-semibold">Lotus</h5>
+              </div>
+            </div>
+
+            <!-- Bomb B -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="../imgs/mapas/lotusbombb.avif"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt=""
+              />
+              <div
+                class="absolute bottom-10 left-1/2 -translate-x-1/2 bg-black/60 text-white px-6 py-3 rounded-xl text-center"
+              >
+                <h5 class="text-lg font-semibold">Bomb B</h5>
+              </div>
+            </div>
+
+            <!-- Mapa -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="../imgs/mapas/lotusmapa.avif"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt=""
+              />
+              <div
+                class="absolute bottom-10 left-1/2 -translate-x-1/2 bg-black/60 text-white px-6 py-3 rounded-xl text-center"
+              >
+                <h5 class="text-lg font-semibold">Mapa Lotus</h5>
+              </div>
+            </div>
+
+            <!-- Bomb A -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="../imgs/mapas/lotusbomba.avif"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt=""
+              />
+              <div
+                class="absolute bottom-10 left-1/2 -translate-x-1/2 bg-black/60 text-white px-6 py-3 rounded-xl text-center"
+              >
+                <h5 class="text-lg font-semibold">Bomb A</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Indicadores -->
+          <div
+            class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+          </div>
+
+          <!-- Controles -->
+          <button
+            type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 group"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 group-hover:bg-black/50"
+            >
+              <svg
+                class="w-4 h-4 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 group"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 group-hover:bg-black/50"
+            >
+              <svg
+                class="w-4 h-4 text-white rtl:rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </section>
+      <p id="descMapa"></p>
+      <div id="botoesMapas">
+        <div class="btn" id="Lotus">
+          <p>Lotus</p>
+          <img src="../imgs/mapas/lotus.avif" alt="" />
+        </div>
+        <div class="btn" id="Split">
+          <p>Split</p>
+          <img src="../imgs/mapas/split.avif" alt="" />
+        </div>
+        <div class="btn" id="Fracture">
+          <p>Fracture</p>
+          <img src="../imgs/mapas/fracture.avif" alt="" />
+        </div>
+        <div class="btn" id="Haven">
+          <p>Haven</p>
+          <img src="../imgs/mapas/haven.avif" alt="" />
+        </div>
+        <div class="btn" id="Ascent">
+          <p>Ascent</p>
+          <img src="../imgs/mapas/ascent.avif" alt="" />
+        </div>
+        <div class="btn" id="Breeze">
+          <p>Breeze</p>
+          <img src="../imgs/mapas/breeze.avif" alt="" />
+        </div>
+        <div class="btn" id="Bind">
+          <p>Bind</p>
+          <img src="../imgs/mapas/bind.avif" alt="" />
+        </div>
+        <div class="btn" id="IceBox">
+          <p>IceBox</p>
+          <img src="../imgs/mapas/icebox.avif" alt="" />
+        </div>
+        <div class="btn" id="Pearl">
+          <p>Pearl</p>
+          <img src="../imgs/mapas/pearl.avif" alt="" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h1 id="h1">Valorant Search</h1>
+      <a
+        href="https://api.whatsapp.com/send/?phone=5511949845659&text&type=phone_number&app_absent=0"
+        target="_blank"
+      >
+        <img
+          src="../imgs/imgindex/whatsapp-svgrepo-com.svg"
+          id="imgfooter"
+          alt=""
+        />
+      </a>
+      <p class="p">Criado por:</p>
+      <p class="p">Caio Correia | Lucas Cardoso</p>
+    </footer>
+    <script src="../js/mapa.js"></script>
+    <script>
+      function toggleSubmenu(id) {
+        const submenu = document.getElementById(id);
+        submenu.style.display =
+          submenu.style.display === "block" ? "none" : "block";
+      }
+    </script>
+    <!-- Flowbite JS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </body>
+</html>

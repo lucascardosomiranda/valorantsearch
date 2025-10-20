@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tabela de Armas</title>
+    <link rel="stylesheet" href="../css/arma.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=
+    Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <aside class="sidebar">
+        <nav>
+          <hr />
+          <a href="../html/index.html">Sobre</a>
+          <a href="#" onclick="toggleSubmenu('mmenu1')">Modos de jogo</a>
+          <ul class="submenu" id="mmenu1">
+            <li><a href="../html/competitivo.html">Competitivo</a></li>
+            <li><a href="../html/semclass.html">Sem classificação</a></li>
+            <li><a href="../html/frenético.html">Frenético</a></li>
+            <li><a href="../html/mata.html">Mata-mata</a></li>
+          </ul>
+          <a href="../html/arma.html">Armas</a>
+          <a href="#" onclick="toggleSubmenu('mmenu2')">Funções</a>
+          <ul class="submenu" id="mmenu2">
+            <li><a href="../html/duelistas.html">Duelista</a></li>
+            <li><a href="../html/iniciadores.html">Iniciador</a></li>
+            <li><a href="../html/controladores.html">Controlador</a></li>
+            <li><a href="../html/sentinelas.html">Sentinela</a></li>
+          </ul>
+          <a href="../html/composicao.html">Composição</a>
+          <a href="../html/mapas.html">Mapas</a>
+          <a href="../html/creditos.html">Créditos</a>
+
+          <hr />
+        </nav>
+      </aside>
+      <div class="overlay"></div>
+    </header>
+
+    <main>
+      <section class="hdvalo">
+        <p>ESCOLHA SUA ARMA</p>
+      </section>
+
+      <section class="tab">
+        <table>
+          <tr>
+            <th>Imagem</th>
+            <th>Informações</th>
+          </tr>
+          <tr>
+            <td class="imagem" rowspan="4">
+              <img class="img" src="../imgs/imgarmas/classic.avif" alt="Arma" />
+            </td>
+            <td class="dano"></td>
+          </tr>
+          <tr>
+            <td class="recoil"></td>
+          </tr>
+          <tr>
+            <td class="speedfire"></td>
+          </tr>
+          <tr>
+            <td class="tempoMirar"></td>
+          </tr>
+        </table>
+
+        <section class="din">
+          <h1 id="p">Pistolas</h1>
+          <h1 id="m">Metralhadoras</h1>
+          <h1 id="e">Espingardas</h1>
+          <h1 id="f">Fuzis</h1>
+          <h1 id="fp">Fuzis de Precisão</h1>
+        </section>
+      </section>
+
+      <section class="armas">
+        <!-- pistolas -->
+        <div class="card">
+          <img class="armasimg" src="../imgs/imgarmas/classic.avif" alt="" />
+          <h2>Classic</h2>
+        </div>
+        <div class="card">
+          <img class="armasimg" src="../imgs/imgarmas/shorty.avif" alt="" />
+          <h2>Shorty</h2>
+        </div>
+        <div class="card">
+          <img class="armasimg" src="../imgs/imgarmas/frenzy.avif" alt="" />
+          <h2>Frenzy</h2>
+        </div>
+        <div class="card">
+          <img class="armasimg" src="../imgs/imgarmas/ghost.avif" alt="" />
+          <h2>Ghost</h2>
+        </div>
+        <div class="card">
+          <img class="armasimg" src="../imgs/imgarmas/sherif.avif" alt="" />
+          <h2>Sherif</h2>
+        </div>
+        <!-- metralhadoras -->
+        <div class="card">
+          <img class="armasimg" src="../imgs/imgarmas/stinger.avif" alt="" />
+          <h2>Stinger</h2>
+        </div>
+        <div class="card">
+          <img class="armasimg" src="../imgs/imgarmas/spectre.avif" alt="" />
+          <h2>Spectre</h2>
+        </div>
+        <div class="card">
+          <img class="armasimg" src="../imgs/imgarmas/ares.avif" alt="" />
+          <h2>Ares</h2>
+        </div>
+        <div class="card">
+          <img class="armasimg" src="../imgs/imgarmas/odin.avif" alt="" />
+          <h2>Odin</h2>
+        </div>
+        <!-- 12 -->
+        <div class="card">
+          <img class="armasimg" src="../imgs/imgarmas/bucky.avif" alt="" />
+          <h2>Bucky</h2>
+        </div>
+        <div class="card">
+          <img class="armasimg" src="../imgs/imgarmas/judge.avif" alt="" />
+          <h2>Judge</h2>
+        </div>
+        <!-- fuzis -->
+        <div class="card">
+          <img class="armasimg" src="../imgs/imgarmas/bulldog.avif" alt="" />
+          <h2>Bulldog</h2>
+        </div>
+        <div class="card">
+          <img class="armasimg" src="../imgs/imgarmas/guardian.avif" alt="" />
+          <h2>Guardian</h2>
+        </div>
+        <div class="card">
+          <img class="armasimg" src="../imgs/imgarmas/phantom.avif" alt="" />
+          <h2>Phantom</h2>
+        </div>
+        <div class="card">
+          <img class="armasimg" src="../imgs/imgarmas/vandal.avif" alt="" />
+          <h2>Vandal</h2>
+        </div>
+        <!-- fuzis de precisão -->
+        <div class="card">
+          <img class="armasimg" src="../imgs/imgarmas/marshla.avif" alt="" />
+          <h2>Marshal</h2>
+        </div>
+        <div class="card">
+          <img class="armasimg" src="../imgs/imgarmas/outlaw.avif" alt="" />
+          <h2>Outlaw</h2>
+        </div>
+        <div class="card">
+          <img class="armasimg" src="../imgs/imgarmas/operator.avif" alt="" />
+          <h2>Operator</h2>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h1 id="h1">Valorant Search</h1>
+      <a
+        href="https://api.whatsapp.com/send/?phone=5511949845659&text&type=phone_number&app_absent=0"
+        target="_blank"
+      >
+        <img
+          src="../imgs/imgindex/whatsapp-svgrepo-com.svg"
+          id="imgfooter"
+          alt=""
+        />
+      </a>
+      <p class="p">Criado por:</p>
+      <p class="p">Caio Correia | Lucas Cardoso</p>
+    </footer>
+    <script>
+      function toggleSubmenu(id) {
+        const submenu = document.getElementById(id);
+        submenu.style.display =
+          submenu.style.display === "block" ? "none" : "block";
+      }
+    </script>
+    <script src="../js/armascard.js"></script>
+    <script src="../js/arrayarmas.js"></script>
+  </body>
+</html>

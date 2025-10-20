@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Iniciadores</title>
+    <link rel="stylesheet" href="../css/agnts.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Toda a parte de cima do código (header) -->
+    <header>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <!-- Lista lateral -->
+      <aside class="sidebar">
+        <nav>
+          <hr />
+          <a href="../html/index.html">Sobre</a>
+          <a href="#" onclick="toggleSubmenu('mmenu1')">Modos de jogo</a>
+          <ul class="submenu" id="mmenu1">
+            <li><a href="../html/competitivo.html">Competitivo</a></li>
+            <li><a href="../html/semclass.html">Sem classificação</a></li>
+            <li><a href="../html/frenético.html">Frenético</a></li>
+            <li><a href="../html/mata.html">Mata-mata</a></li>
+          </ul>
+          <a href="../html/arma.html">Armas</a>
+          <a href="#" onclick="toggleSubmenu('mmenu2')">Funções</a>
+          <ul class="submenu" id="mmenu2">
+            <li><a href="../html/duelistas.html">Duelista</a></li>
+            <li><a href="../html/iniciadores.html">Iniciador</a></li>
+            <li><a href="../html/controladores.html">Controlador</a></li>
+            <li><a href="../html/sentinelas.html">Sentinela</a></li>
+          </ul>
+          <a href="../html/composicao.html">Composição</a>
+          <a href="../html/mapas.html">Mapas</a>
+          <a href="../html/creditos.html">Créditos</a>
+
+          <hr />
+        </nav>
+      </aside>
+      <div class="overlay"></div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p>INICIADORES</p>
+        <img
+          class="imgsimbolo"
+          src="../imgs/imgpersonas/iniciador.png"
+          alt=""
+        />
+      </section>
+
+      <section class="partcard">
+        <div class="card">
+          <img class="agentes" src="../imgs/imgpersonas/breach.png" alt="" />
+          <p>BREACH</p>
+        </div>
+        <div class="card">
+          <img class="agentes" src="../imgs/imgpersonas/fade.png" alt="" />
+          <p>FADE</p>
+        </div>
+        <div class="card">
+          <img class="agentes" src="../imgs/imgpersonas/gkko.png" alt="" />
+          <p>GEKKO</p>
+        </div>
+        <div class="card">
+          <img class="agentes" src="../imgs/imgpersonas/kayo.png" alt="" />
+          <p>KAYO</p>
+        </div>
+        <div class="card">
+          <img class="agentes" src="../imgs/imgpersonas/skye.png" alt="" />
+          <p>SKYE</p>
+        </div>
+        <div class="card">
+          <img class="agentes" src="../imgs/imgpersonas/sova.png" alt="" />
+          <p>SOVA</p>
+        </div>
+        <div class="card">
+          <img class="agentes" src="../imgs/imgpersonas/tejo.png" alt="" />
+          <p>TEJO</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h1 id="h1">Valorant Search</h1>
+      <a
+        href="https://api.whatsapp.com/send/?phone=5511949845659&text&type=phone_number&app_absent=0"
+        target="_blank"
+      >
+        <img
+          src="../imgs/imgindex/whatsapp-svgrepo-com.svg"
+          id="imgfooter"
+          alt=""
+        />
+      </a>
+      <p class="p">Criado por:</p>
+      <p class="p">Caio Correia | Lucas Cardoso</p>
+    </footer>
+
+    <script>
+      function toggleSubmenu(id) {
+        const submenu = document.getElementById(id);
+        submenu.style.display =
+          submenu.style.display === "block" ? "none" : "block";
+      }
+    </script>
+  </body>
+</html>
